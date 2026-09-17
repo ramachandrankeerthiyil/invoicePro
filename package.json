@@ -1,0 +1,28 @@
+{
+  "name": "invoicepro",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Invoice follow-up and payment-risk tracker (POC)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "db:push": "prisma db push",
+    "db:seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "csv-parse": "^7.0.2",
+    "next": "^16.3.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "jest": "^29.7.0",
+    "postcss": "^8.4.47",
+    "prisma": "^5.20.0",
+    "tailwindcss": "^3.4.13"
+  }
+}

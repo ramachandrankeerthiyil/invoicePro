@@ -1,0 +1,9 @@
+invoice_number,customer_name,amount,invoice_date,due_date,status
+INV-2001,Gamma Staffing,50000,2026-09-01,2026-09-15,unpaid
+INV-2002,,40000,2026-09-01,2026-09-15,unpaid
+INV-2003,Gamma Staffing,-1000,2026-09-01,2026-09-15,unpaid
+INV-2004,Gamma Staffing,30000,2026-09-01,not-a-date,unpaid
+INV-2005,Gamma Staffing,30000,2026-09-20,2026-09-10,unpaid
+INV-2006,Gamma Staffing,30000,2026-09-01,2026-09-15,cancelled
+,Gamma Staffing,30000,2026-09-01,2026-09-15,unpaid
+INV-2008,Delta Consulting,80000,2026-09-01,2026-09-30,unpaid

@@ -1,0 +1,36 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Customer {
+  id       String    @id @default(cuid())
+  name     String    @unique
+  invoices Invoice[]
+}
+
+model Invoice {
+  id               String        @id @default(cuid())
+  invoiceNumber    String        @unique
+  customerId       String
+  customer         Customer      @relation(fields: [customerId], references: [id])
+  amount           Float
+  invoiceDate      DateTime
+  dueDate          DateTime
+  status           String // "unpaid" | "paid"
+  paidDate         DateTime?
+  lastFollowUpDate DateTime?
+  followUps        FollowUpLog[]
+}
+
+model FollowUpLog {
+  id        String   @id @default(cuid())
+  invoiceId String
+  invoice   Invoice  @relation(fields: [invoiceId], references: [id])
+  createdAt DateTime @default(now())
+  tone      String // "polite" | "firm" | "escalation"
+}

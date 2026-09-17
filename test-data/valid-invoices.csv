@@ -1,0 +1,9 @@
+invoice_number,customer_name,amount,invoice_date,due_date,status
+INV-1001,Acme Technologies,185000,2026-08-01,2026-08-31,unpaid
+INV-1002,Acme Technologies,120000,2026-06-01,2026-06-30,paid
+INV-1003,Acme Technologies,95000,2026-05-01,2026-05-31,paid
+INV-1004,Acme Technologies,150000,2026-04-01,2026-04-30,paid
+INV-1005,Bright Digital Agency,60000,2026-09-01,2026-09-15,unpaid
+INV-1006,Bright Digital Agency,45000,2026-08-01,2026-08-15,paid
+INV-1007,Zenith Manufacturing,220000,2026-09-05,2026-09-20,unpaid
+INV-1008,Staffly Solutions,75000,2026-08-20,2026-09-05,unpaid

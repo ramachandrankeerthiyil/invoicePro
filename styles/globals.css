@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+.badge-high {
+  @apply bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs font-semibold;
+}
+
+.badge-low {
+  @apply bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs font-semibold;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow p-4;
+}
+
+.btn {
+  @apply px-3 py-1.5 rounded bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 disabled:opacity-50;
+}
+
+.btn-secondary {
+  @apply px-3 py-1.5 rounded bg-gray-200 text-gray-800 text-sm font-medium hover:bg-gray-300;
+}
